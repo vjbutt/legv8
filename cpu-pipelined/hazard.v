@@ -16,10 +16,8 @@ module hazard(stage, idex_memread, opcode, rn, rm, rt, idex_rd, stall);
 
 	always @(*) begin
 		if ((stage > 3'b001)
-	           && idex_memread
-	           && ((rn == idex_rd)
-	           || (((opcode & `R_MASK) == `R_BITSET) && (rm == idex_rd))
-	           || (((opcode & `STUR_MASK) == `STUR_BITSET) && (rt == idex_rd))))
+	           && idex_memread//检查是否是load指令
+	           && ((rn == idex_rd)|| (((opcode & `R_MASK) == `R_BITSET) && (rm == idex_rd))|| (((opcode & `STUR_MASK) == `STUR_BITSET) && (rt == idex_rd))))
 			stall <= 1'b1;
 		else
 			stall <= 1'b0;
