@@ -192,7 +192,7 @@ function getformat(opcode) {
 }
 
 # normalize the operand of a instruction
-function normalize(operand) {
+function normalizef(operand) {
 	sub(/^\[?#?/, "", operand)
 	sub(/\]?$/, "", operand)
 	return operand
@@ -276,7 +276,7 @@ function processtext(normalize,  opcode) {
 	if (normalize) {
 		$1 = toupper($1)
 		for (i = 2; i <= NF; i++)
-			$i = normalize($i)
+			$i = normalizef($i)
 		gsub(/,/, " ")
 		sub(/[\t ]+$/, "")
 		sub(/^[\t ]+/, "")
