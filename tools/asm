@@ -323,6 +323,8 @@ function processdata(type, i) {
 	$0 = $0
 	if (type == ".word") {
 		writedata(8)
+	} else if (type == ".byte") {
+		writedata(1)		
 	} else {
 		err("unknown directive: " $1)
 	}
