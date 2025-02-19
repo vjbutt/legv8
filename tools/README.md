@@ -87,7 +87,7 @@ In the `.data` section, the following data types can be used:
 * `.byte`:	comma seperated, 8-bit decimal values.
 * `.string`:	inverted commas delimited null-terminated string.
 
-When compiling the following example file:
+When assembling the following example file:
 
 	.data
  		.string "Hello, Goodbye World!"
