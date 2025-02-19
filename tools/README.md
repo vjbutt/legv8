@@ -81,7 +81,7 @@ source file.  That's because the source file contains the pseudo-instruction
 	f8 40 0c 21
 	8b 01 00 00
 
-In the .data section, the following data types can be used:
+In the `.data` section, the following data types can be used:
 
 .word  	- comma separated, 64-bit decimal values
 .byte	- comma seperated, 8-bit decimal values
@@ -94,7 +94,7 @@ When compiling the following example file:
  		.byte 10, 20, 30, 255
    		.word 65536, 8446744073709551615
 
-this will produce the following .data file:
+this will produce the following `.data` file:
 
 	48 65 6c 6c 6f 2c 20 47 6f 6f 64 62 79 65 20 57 6f 72 6c 64 21 00
 	0a
