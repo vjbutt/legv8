@@ -83,9 +83,9 @@ source file.  That's because the source file contains the pseudo-instruction
 
 In the `.data` section, the following data types can be used:
 
-.word  	- comma separated, 64-bit decimal values
-.byte	- comma seperated, 8-bit decimal values
-.string	- inverted commas delimited null-terminated string
+* `.word`:	comma separated, 64-bit decimal values.
+* `.byte`:	comma seperated, 8-bit decimal values.
+* `.string`:	inverted commas delimited null-terminated string.
 
 When compiling the following example file:
 
