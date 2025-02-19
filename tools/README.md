@@ -92,7 +92,7 @@ When assembling the following example file:
 	.data
  		.string "Hello, Goodbye World!"
  		.byte 10, 20, 30, 255
-   		.word 65536, 8446744073709551615
+   		.word 65536, 4294967295
 
 this will produce the following `.data` file:
 
